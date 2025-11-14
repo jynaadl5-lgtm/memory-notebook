@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مفكرة الذكرى</title>
+    <style>
+      .birds-container {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 200px;
+        height: 150px;
+        display: flex;
+        gap: 10px;
+        transform: scaleX(-1);
+      }
+
+      .hmama {
+        position: absolute;
+        width: 40px;
+        height: auto;
+        filter: brightness(0) saturate(100%) invert(89%) sepia(3%)
+          saturate(427%) hue-rotate(163deg) brightness(95%) contrast(94%);
+        opacity: 1;
+      }
+      .bird1 {
+        top: 0;
+        right: 0;
+        transform: scaleX(-1);
+      }
+
+      .bird2 {
+        top: 20px;
+        right: 50px;
+        transform: scaleX(-1);
+      }
+
+      .bird3 {
+        top: 60px;
+        right: 20px;
+        transform: scaleX(-1);
+      }
+
+      .input-field {
+        width: 100%;
+        padding: 10px;
+        border-radius: 15px;
+        border: 1px solid pink;
+        font-size: 16px;
+      }
+
+      body {
+        background-color: #ffdada;
+        font-family: "Arial", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .card {
+        background-color: #fff0f0;
+        border-radius: 20px;
+        padding: 40px 30px;
+        width: 90%;
+        max-width: 500px;
+        text-align: center;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        position: relative;
+      }
+
+      h1 {
+        color: #5c0000;
+        margin-bottom: 20px;
+      }
+
+      p {
+        color: #5c0000;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+
+      textarea {
+        width: 94%;
+        height: 100px;
+        border-radius: 20px;
+        padding: 15px;
+        border: 1px solid pink;
+        font-size: 16px;
+        resize: none;
+      }
+
+      button {
+        margin-top: 20px;
+        padding: 10px 30px;
+        background-color: #f3b5b5;
+        border: none;
+        border-radius: 20px;
+        color: #5c0000;
+        font-size: 18px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #e59b9b;
+      }
+      .warda {
+        position: absolute;
+        bottom: 0%;
+        right: 5px;
+        width: 150px;
+        opacity: 0.2;
+        transform: rotate(-25deg);
+        z-index: 0;
+      }
+
+      .file-chooser {
+        width: 95%;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="title-box">
+        <img src="hmama.png" alt="حمامة" class="hmama bird1" />
+        <img src="hmama.png" alt="حمامة" class="hmama bird2" />
+        <img src="hmama.png" alt="حمامة" class="hmama bird3" />
+      </div>
+
+      <h1>مفكرة الذكرى لـ مارك كمال</h1>
+
+      <p>هنا تكتب كلمات من القلب، ودعوات لا تقطع...</p>
+
+      <form action="https://getform.io/f/bnlxonlb" method="POST">
+        <input
+          class="input-field file-chooser"
+          type="text"
+          name="name"
+          placeholder="اكتب اسمك"
+          required
+        />
+        <select class="input-field">
+          <br /><br />
+          <option value="دعاء">دعاء</option>
+          <option value="ذكرى">ذكرى</option>
+        </select>
+        <br /><br />
+        <textarea placeholder="اكتب هنا دعاء أو ذكرى..." required></textarea>
+        <br /><br />
+        <input type="file" accept="image/*" class="input-field file-chooser" />
+        <br /><br />
+        <br />
+        <button>إرسال</button>
+      </form>
+
+      <img src="warda.png" class="warda" alt="وردة" />
+
+      <footer
+        style="text-align: center; padding: 20px; font-size: 14px; color: gray"
+      >
+        Designed and developed © by Gena Adel
+      </footer>
+    </div>
+  </body>
+</html>
