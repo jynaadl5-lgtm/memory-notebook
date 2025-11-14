@@ -14,6 +14,7 @@
         display: flex;
         gap: 10px;
         transform: scaleX(-1);
+        box-sizing: border-box;
       }
 
       .hmama {
@@ -23,23 +24,27 @@
         filter: brightness(0) saturate(100%) invert(89%) sepia(3%)
           saturate(427%) hue-rotate(163deg) brightness(95%) contrast(94%);
         opacity: 1;
+        height: auto;
       }
       .bird1 {
         top: 0;
         right: 0;
         transform: scaleX(-1);
+        height: auto;
       }
 
       .bird2 {
         top: 20px;
         right: 50px;
         transform: scaleX(-1);
+        height: auto;
       }
 
       .bird3 {
         top: 60px;
         right: 20px;
         transform: scaleX(-1);
+        height: auto;
       }
 
       .input-field {
@@ -114,14 +119,31 @@
         opacity: 0.2;
         transform: rotate(-25deg);
         z-index: 0;
+        height: auto;
       }
 
       .file-chooser {
         width: 95%;
         margin-bottom: 10px;
       }
+      .body, html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+@media (max-width: 768px) {
+  .flex-row {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .text-large {
+    font-size: 16px;
+  }
+}
+
     </style>
-  </head>
+  </head><meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <body>
     <div class="card">
       <div class="title-box">
